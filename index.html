@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 14 Flex</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#header" class="header__logo">Flex</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#Flex-container" class="menu__link">Flex-container</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item"><a href="#flex-wrap" class="menu__sub-link">flex-wrap</a></li>
+									<li class="menu__sub-item"><a href="#justify-content"
+											class="menu__sub-link">justify-content</a></li>
+									<li class="menu__sub-item"><a href="#align-items" class="menu__sub-link">align-items</a></li>
+									<li class="menu__sub-item"><a href="#flex-direction"
+											class="menu__sub-link">flex-direction</a></li>
+									<li class="menu__sub-item"><a href="#gap" class="menu__sub-link">gap</a></li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="#Flex-element" class="menu__link">Flex-element</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item"><a href="#align-self" class="menu__sub-link">align-self</a></li>
+									<li class="menu__sub-item"><a href="#flex-grow" class="menu__sub-link">flex-grow</a>
+									</li>
+									<li class="menu__sub-item"><a href="#flex-shrink" class="menu__sub-link">flex-shrink</a></li>
+									<li class="menu__sub-item"><a href="#flex-basis" class="menu__sub-link">flex-basis</a>
+									</li>
+									<li class="menu__sub-item"><a href="#order" class="menu__sub-link">order</a></li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="#Flex-element" class="menu__link">Flex-custom</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item"><a href="#future-gap" class="menu__sub-link">gap</a></li>
+									<li class="menu__sub-item"><a href="#future-text" class="menu__sub-link">text</a>
+									</li>
+									<li class="menu__sub-item"><a href="#future-card" class="menu__sub-link">card</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__flex-container flex-container">
+				<div class="flex-container__container">
+					<h2 class="flex-container__title title">flex-container</h2>
+					<div class="flex-container__flex-wrap flex-wrap">
+						<h3 class="flex-wrap__sub-title sub-title">flex-wrap</h3>
+						<div class="flex-wrap__block block">
+							<div class="flex-wrap__box box">
+								<span>nowrap, width: 250px;</span>
+								<div class="flex-wrap__item"></div>
+								<div class="flex-wrap__item"></div>
+							</div>
+							<div class="flex-wrap__box box">
+								<span>wrap, width: 250px;</span>
+								<div class="flex-wrap__item"></div>
+								<div class="flex-wrap__item"></div>
+								<div class="flex-wrap__item"></div>
+							</div>
+							<div class="flex-wrap__box box">
+								<span>wrap, width: 250px;</span>
+								<div class="flex-wrap__item"></div>
+								<div class="flex-wrap__item"></div>
+								<div class="flex-wrap__item"></div>
+								<div class="flex-wrap__item"></div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-container__justify-content justify-content">
+						<h3 class="justify-content__sub-title sub-title">justify-content</h3>
+						<div class="justify-content__block block">
+							<div class="justify-content__box box">
+								<span>flex-start;</span>
+								<div class="justify-content__item"></div>
+							</div>
+							<div class="justify-content__box box">
+								<span>flex-end;</span>
+								<div class="justify-content__item"></div>
+								<div class="justify-content__item"></div>
+								<div class="justify-content__item"></div>
+							</div>
+							<div class="justify-content__box box">
+								<span>center</span>
+								<div class="justify-content__item"></div>
+								<div class="justify-content__item"></div>
+								<div class="justify-content__item"></div>
+								<div class="justify-content__item"></div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-container__align-items align-items">
+						<h3 class="align-items__sub-title sub-title">align-items</h3>
+						<div class="align-items__block block">
+							<div class="align-items__box box">
+								<span>flex-start;</span>
+								<div class="align-items__item"></div>
+							</div>
+							<div class="align-items__box box">
+								<span>center;</span>
+								<div class="align-items__item"></div>
+								<div class="align-items__item"></div>
+								<div class="align-items__item"></div>
+							</div>
+							<div class="align-items__box box">
+								<span>flex-end</span>
+								<div class="align-items__item"></div>
+								<div class="align-items__item"></div>
+								<div class="align-items__item"></div>
+								<div class="align-items__item"></div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-container__flex-direction flex-direction">
+						<h3 class="flex-direction__sub-title sub-title">flex-direction</h3>
+						<div class="flex-direction__block block">
+							<div class="flex-direction__box box">
+								<span>row-reverse; wrap;</span>
+								<div class="flex-direction__item">1</div>
+								<div class="flex-direction__item">2</div>
+								<div class="flex-direction__item">3</div>
+								<div class="flex-direction__item">4</div>
+							</div>
+							<div class="flex-direction__box box">
+								<span>column; center; nowrap</span>
+								<div class="flex-direction__item">1</div>
+								<div class="flex-direction__item">2</div>
+								<div class="flex-direction__item">3</div>
+							</div>
+							<div class="flex-direction__box box">
+								<span>column-reverse; nowrap</span>
+								<div class="flex-direction__item">1</div>
+								<div class="flex-direction__item">2</div>
+								<div class="flex-direction__item">3</div>
+								<div class="flex-direction__item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-container__flex-grow flex-grow">
+						<h3 class="flex-grow__sub-title sub-title">flex-shrink</h3>
+						<div class="flex-grow__block block">
+							<div class="flex-grow__box box">
+								<span>row-reverse; wrap;</span>
+								<div class="flex-grow__item">1</div>
+								<div class="flex-grow__item">2</div>
+								<div class="flex-grow__item">3</div>
+								<div class="flex-grow__item">4</div>
+							</div>
+							<div class="flex-grow__box box">
+								<span>shrink: 0; wrap</span>
+								<div class="flex-grow__item">1</div>
+								<div class="flex-grow__item">2</div>
+								<div class="flex-grow__item">3</div>
+							</div>
+							<div class="flex-grow__box box">
+								<span>shrink: 0; wrap</span>
+								<div class="flex-grow__item">1</div>
+								<div class="flex-grow__item">2</div>
+								<div class="flex-grow__item">3</div>
+								<div class="flex-grow__item">4</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-container__flex-basis flex-basis">
+						<h3 class="flex-basis__sub-title sub-title">flex-basis</h3>
+						<div class="flex-basis__block block">
+							<div class="flex-basis__box box">
+								<span>flex-basis 100%; wrap;</span>
+								<div class="flex-basis__item">1</div>
+								<div class="flex-basis__item">2</div>
+								<div class="flex-basis__item">3</div>
+								<div class="flex-basis__item">4</div>
+							</div>
+							<div class="flex-basis__box box">
+								<span>shrink: 0; nowrap</span>
+								<div class="flex-basis__item">1</div>
+								<div class="flex-basis__item">2</div>
+								<div class="flex-basis__item">3</div>
+							</div>
+							<div class="flex-basis__box box">
+								<span>shrink: 0; wrap</span>
+								<div class="flex-basis__item">1</div>
+								<div class="flex-basis__item">2</div>
+								<div class="flex-basis__item">3</div>
+								<div class="flex-basis__item">4</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__practice practice">
+					<div class="practice__container">
+						<h2 class="practice__title title">flex practice</h2>
+						<div class="practice__column">
+							<div class="practice__block block">
+								<div class="practice__adaptive-block adaptive-block">
+									<div class="adaptive-block__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi laudantium deserunt
+										iste pariatur. Fugit itaque facilis dolor commodi mollitia quo aperiam reprehenderit
+										assumenda, a aut iusto, maiores amet sapiente sunt!
+									</div>
+									<a href="" class="adaptive-block__button">Button</a>
+								</div>
+								<div class="adaptive-block__image-box">
+									<img src="img/01.jpg" alt="">
+								</div>
+
+							</div>
+							<div class="practice__block block">
+								<div class="practice__adaptive-block adaptive-block">
+									<div class="adaptive-block__text">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi laudantium deserunt
+										iste pariatur. Fugit itaque facilis dolor commodi mollitia quo aperiam reprehenderit
+										assumenda, a aut iusto, maiores amet sapiente sunt!
+									</div>
+									<a href="" class="adaptive-block__button">Button</a>
+								</div>
+								<div class="adaptive-block__image-box">
+									<img src="img/01.jpg" alt="">
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="page__cards cards">
+					<div class="cards__container">
+						<h2 class="cards__title title">cards practice</h2>
+						<div class="cards__row">
+							<div class="cards__block block">
+								<div class="cards__item item">
+									<div class="item__row">
+										<div class="item__image-box">
+											<img src="img/01.jpg" alt="">
+										</div>
+										<div class="item__body">
+											<h3 class="item__title">Jeka</h3>
+											<div class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Pariatur aut, eius atque ut autem reprehenderit optio illum est ipsam dolores itaque
+												sapiente cumque consectetur repellendus. Illum repellat doloribus harum eligendi?
+											</div>
+											<a href="" class="item__button">button</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards__block block">
+								<div class="cards__item item">
+									<div class="item__row">
+										<div class="item__image-box">
+											<img src="img/01.jpg" alt="">
+										</div>
+										<div class="item__body">
+											<h3 class="item__title">Jeka</h3>
+											<div class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Pariatur aut, eius atque ut autem reprehenderit optio illum est ipsam dolores itaque
+												sapiente cumque consectetur repellendus. Illum repellat doloribus harum eligendi?
+											</div>
+											<a href="" class="item__button">button</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards__block block">
+								<div class="cards__item item">
+									<div class="item__row">
+										<div class="item__image-box">
+											<img src="img/01.jpg" alt="">
+										</div>
+										<div class="item__body">
+											<h3 class="item__title">Jeka</h3>
+											<div class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Pariatur aut, eius atque ut autem reprehenderit optio illum est ipsam dolores itaque
+												sapiente cumque consectetur repellendus. Illum repellat doloribus harum eligendi?
+											</div>
+											<a href="" class="item__button">button</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards__block block">
+								<div class="cards__item item">
+									<div class="item__row">
+										<div class="item__image-box">
+											<img src="img/01.jpg" alt="">
+										</div>
+										<div class="item__body">
+											<h3 class="item__title">Jeka</h3>
+											<div class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Pariatur aut, eius atque ut autem reprehenderit optio illum est ipsam dolores itaque
+												sapiente cumque consectetur repellendus. Illum repellat doloribus harum eligendi?
+											</div>
+											<a href="" class="item__button">button</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
